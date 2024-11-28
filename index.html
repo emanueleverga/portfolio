@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuele Verga - Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #000000;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #fcb045;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #cccccc;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fcb045;
+            text-decoration: none;
+            font-weight: 400;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border: 2px solid #fcb045;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fcb045;
+            color: #000000;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto 40px auto;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #fcb045;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 2px solid #333333;
+            display: inline-block;
+        }
+
+        section p {
+            font-size: 1.1em;
+            color: #bbbbbb;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        /* Skills */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #dddddd;
+        }
+
+        /* Portfolio Section */
+        .project {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .project h3 {
+            color: #fcb045;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cccccc;
+        }
+
+        /* Contact Section */
+        .contact a {
+            color: #fcb045;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #000000;
+            padding: 20px;
+            color: #cccccc;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emanuele Verga</h1>
+        <p>Digital Marketing Specialist | Event Organizer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a versatile professional with expertise in digital marketing, and event organization, driven by a passion for creating impactful experiences and measurable results. With a background in managing digital campaigns, curating cultural events, I thrive in fast-paced, collaborative environments that demand creativity and precision.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Expertise</h2>
+        <ul>
+            <li><strong>Digital Marketing:</strong> Meta and Google Ads, SEO/SEM strategies, campaign optimization, and budget management.</li>
+            <li><strong>Event Management:</strong> Line-up curation, sponsorship acquisition, logistics coordination, and stakeholder relations.</li>
+            <li><strong>Tools:</strong> Meta Business Manager, Google Ads, Canva, Shopify, and more.</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Digital Marketing Campaigns (Koal Sagl)</h3>
+            <p>Managed social campaigns with daily budgets ranging from CHF 20 to CHF 240, scaling client budgets by 300% and delivering high ROI.</p>
+        </div>
+        <div class="project">
+            <h3>Fresh Festival (Lugano)</h3>
+            <p>Attracted over 1,000 attendees annually, raised funds through sponsorships, and developed partnerships with local institutions.</p>
+        </div>
+        <div class="project">
+            <h3>Hungry Collections</h3>
+            <p>Launched a streetwear brand, selling 1,000+ products globally, and built a cohesive brand identity focused on sustainability.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📧 Email: <a href="mailto:emanueleverga93@gmail.com">emanueleverga93@gmail.com</a></p>
+        <p>📍 Location: Lugano, Switzerland</p>
+        <p>🔗 LinkedIn: <a href="https://linkedin.com/in/emanuele-verga" target="_blank">linkedin.com/in/emanuele-verga</a></p>
+        <p>🌐 GitHub Portfolio: <a href="https://github.com/ema-verga" target="_blank">github.com/ema-verga</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Emanuele Verga. All rights reserved.</p>
+    </footer>
+</body>
+</html>
