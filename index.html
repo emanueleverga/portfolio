@@ -7,11 +7,9 @@
   <meta name="description" content="Paid Social Specialist with 5+ years of experience in Meta & TikTok Ads, full-funnel strategy, A/B testing, tracking and reporting. President & Co-Artistic Director of Fresh Festival in Lugano." />
   <meta name="color-scheme" content="light dark" />
 
-  <!-- Typefaces -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ====== Base & Theme ====== */
     :root{
       --bg: #0f1115;
       --card: #141820;
@@ -27,8 +25,7 @@
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto;
+      margin:0; font-family: Inter;
       color:var(--text);
       background:
         radial-gradient(1200px 600px at 130% -20%, rgba(124,92,252,.18), transparent 60%),
@@ -45,14 +42,13 @@
       pointer-events:none; z-index:-1;
     }
     a{color:inherit;text-decoration:none}
-    img{max-width:100%; display:block}
+    img{max-width:100%;display:block}
     .container{max-width:var(--maxw); margin-inline:auto; padding-inline:24px}
     .badge{
       display:inline-block; padding:6px 10px; border:1px solid var(--line);
       border-radius:999px; color:var(--muted); font-size:.8rem; letter-spacing:.04em; text-transform:uppercase;
     }
 
-    /* ====== Header ====== */
     header{
       position:sticky; top:0; z-index:50;
       backdrop-filter:saturate(140%) blur(10px);
@@ -63,26 +59,24 @@
       display:flex; align-items:center; justify-content:space-between;
       gap:16px; padding-block:14px;
     }
-    .brand{
-      display:flex; align-items:baseline; gap:10px;
-    }
+    .brand{display:flex; align-items:baseline; gap:10px}
     .brand h1{
-      margin:0; font-family:"Space Grotesk"; font-weight:800; letter-spacing:.02em;
+      margin:0; font-family:"Space Grotesk"; font-weight:800;
       text-transform:uppercase; font-size:1.1rem;
     }
-    .brand .subtitle{ color:var(--muted); font-size:.85rem }
+    .brand .subtitle{color:var(--muted); font-size:.85rem}
 
-    nav ul{margin:0; padding:0; list-style:none; display:flex; gap:24px}
-    nav a{ position:relative; padding:6px 2px; font-weight:600; color:var(--text) }
+    nav ul{display:flex; gap:24px; margin:0; padding:0; list-style:none}
+    nav a{position:relative; padding:6px 2px; font-weight:600}
     nav a::after{
       content:""; position:absolute; left:0; right:100%; bottom:-6px; height:2px;
       background:linear-gradient(90deg, var(--accent), var(--accent-2));
-      transition:right .25s ease; border-radius:2px;
+      transition:right .25s ease;
     }
     nav a:hover::after{ right:0 }
 
     .menu-toggle{display:none}
-    @media (max-width:780px){
+    @media(max-width:780px){
       nav ul{
         position:fixed; inset:auto 0 0 0;
         background:rgba(15,17,21,.95);
@@ -93,98 +87,90 @@
       }
       .menu-toggle{display:block}
       .menu-toggle input{display:none}
-      .menu-toggle label{ display:grid; gap:5px; cursor:pointer; padding:8px }
-      .menu-toggle label span{ width:26px; height:2px; background:var(--text); border-radius:2px }
-      .menu-toggle input:checked ~ ul{ transform:translateY(0) }
+      .menu-toggle label{display:grid; gap:5px; padding:8px; cursor:pointer}
+      .menu-toggle label span{
+        width:26px; height:2px; background:var(--text); border-radius:2px;
+      }
+      .menu-toggle input:checked ~ ul{transform:translateY(0)}
     }
 
-    /* ====== Hero ====== */
-    .hero{ padding:72px 0 40px; border-bottom:1px solid var(--line) }
+    .hero{padding:72px 0 40px; border-bottom:1px solid var(--line)}
     .hero-grid{
       display:grid; gap:28px; align-items:center;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns:1.2fr .8fr;
     }
-    @media(max-width:900px){ .hero-grid{ grid-template-columns:1fr } }
-
+    @media(max-width:900px){ .hero-grid{grid-template-columns:1fr} }
     .title{
-      font-family:"Space Grotesk"; font-size:clamp(2.2rem,5vw,3.4rem);
-      line-height:1.06; margin:0 0 12px;
+      font-family:"Space Grotesk";
+      font-size:clamp(2.2rem,5vw,3.4rem);
+      margin:0 0 12px;
     }
     .title .accent{
       background:linear-gradient(90deg, var(--accent), var(--accent-2));
       -webkit-background-clip:text; color:transparent;
     }
-    .lead{ color:var(--muted); font-size:1.05rem; margin:0 0 18px }
+    .lead{color:var(--muted); margin:0 0 18px}
 
     .hero-card{
-      background:linear-gradient(180deg, rgba(124,92,252,.10), rgba(124,92,252,0) 40%),
-                 linear-gradient(0deg, rgba(24,227,181,.07), rgba(24,227,181,0) 60%),
-                 var(--card);
+      background:
+        linear-gradient(180deg, rgba(124,92,252,.10), rgba(124,92,252,0) 40%),
+        linear-gradient(0deg, rgba(24,227,181,.07), rgba(24,227,181,0) 60%),
+        var(--card);
       border:1px solid var(--line);
-      border-radius:var(--radius); padding:22px;
+      border-radius:var(--radius);
+      padding:22px;
       box-shadow:var(--shadow);
     }
     .pill-row{display:flex; flex-wrap:wrap; gap:10px}
-    .pill{
-      font-size:.85rem; color:var(--text); border:1px solid var(--line);
-      border-radius:999px; padding:8px 12px; background:#0f11154d;
-    }
+    .pill{font-size:.85rem; border:1px solid var(--line); padding:8px 12px; border-radius:999px; background:#0f11154d}
 
-    /* ====== Sections ====== */
-    section{ padding:64px 0; border-bottom:1px solid var(--line) }
-    .sec-head{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:26px }
+    section{padding:64px 0; border-bottom:1px solid var(--line)}
+    .sec-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:26px}
     .sec-title{
-      margin:0; font-family:"Space Grotesk"; font-size:1.4rem;
-      letter-spacing:.08em; text-transform:uppercase;
+      font-family:"Space Grotesk";
+      text-transform:uppercase; letter-spacing:.08em; margin:0;
     }
-    .underline{ height:2px; width:64px; border-radius:2px; background:linear-gradient(90deg,var(--accent),var(--accent-2)) }
+    .underline{height:2px; width:64px; background:linear-gradient(90deg,var(--accent),var(--accent-2))}
 
-    .grid{ display:grid; gap:22px; grid-template-columns:repeat(12,1fr) }
+    .grid{display:grid; gap:22px; grid-template-columns:repeat(12,1fr)}
     .col-7{grid-column:span 7}
     .col-5{grid-column:span 5}
     .col-6{grid-column:span 6}
     .col-4{grid-column:span 4}
     .col-12{grid-column:1/-1}
     @media(max-width:900px){
-      .col-7,.col-5,.col-6,.col-4{ grid-column:1/-1 }
+      .col-7,.col-5,.col-6,.col-4{grid-column:1/-1}
     }
 
     .card{
       background:var(--card); border:1px solid var(--line);
       border-radius:var(--radius); padding:20px;
-      transition:transform .25s ease, border-color .25s ease;
+      transition:.25s ease;
     }
     .card:hover{
       transform:translateY(-2px);
       border-color:color-mix(in oklab,var(--accent)35%,var(--line));
-      box-shadow:0 10px 38px rgba(124,92,252,.12);
     }
-    .kicker{color:var(--muted); text-transform:uppercase; letter-spacing:.08em; font-size:.8rem; margin:0 0 4px}
-    .muted{ color:var(--muted) }
-
+    .kicker{color:var(--muted); text-transform:uppercase; font-size:.8rem; margin:0 0 4px}
+    .muted{color:var(--muted)}
     .tags{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
-    .tag{
-      border:1px dashed var(--line); border-radius:9px;
-      padding:6px 10px; font-size:.85rem; color:var(--muted)
-    }
+    .tag{border:1px dashed var(--line); padding:6px 10px; border-radius:9px; font-size:.85rem; color:var(--muted)}
 
-    /* Portfolio shot */
     .project{display:grid; gap:14px; grid-template-columns:1.2fr 1fr; align-items:center}
-    @media(max-width:780px){ .project{grid-template-columns:1fr} }
+    @media(max-width:780px){.project{grid-template-columns:1fr}}
     .shot{
       border-radius:14px; overflow:hidden; border:1px solid var(--line);
       background:
         radial-gradient(400px 200px at 80% 20%, rgba(124,92,252,.28), transparent 60%),
         radial-gradient(400px 260px at 10% 90%, rgba(24,227,181,.25), transparent 60%),
         linear-gradient(135deg, #1c2432, #171c27);
-      aspect-ratio:16/9; position:relative;
+      aspect-ratio:16/9;
     }
 
-    /* Timeline */
     .timeline{position:relative; margin-left:6px}
     .timeline::before{
-      content:""; position:absolute; left:10px; top:0; bottom:0;
-      width:2px; background:linear-gradient(180deg,var(--line),transparent);
+      content:""; position:absolute; left:10px; top:0; bottom:0; width:2px;
+      background:linear-gradient(180deg,var(--line),transparent);
     }
     .t-item{position:relative; padding-left:40px; margin-bottom:18px}
     .t-item::before{
@@ -196,8 +182,8 @@
     footer{padding:60px 0}
     .links{display:flex; flex-wrap:wrap; gap:16px}
     .links a{
-      border:1px solid var(--line); border-radius:12px; padding:10px 12px;
-      transition:border-color .25s ease, transform .25s ease;
+      border:1px solid var(--line); padding:10px 12px; border-radius:12px;
+      transition:.25s ease;
     }
     .links a:hover{
       border-color:color-mix(in oklab,var(--accent)35%,var(--line));
@@ -230,29 +216,37 @@
     </div>
 
     <nav class="desktop" style="display:none"></nav>
+
     <script>
       const mobileNav=document.querySelector('.menu-toggle nav ul');
       const desktopNav=document.querySelector('nav.desktop');
-      function sync(){ if(window.innerWidth>780){
+      function sync(){
+        if(window.innerWidth>780){
           desktopNav.style.display='block';
           if(!desktopNav.innerHTML) desktopNav.appendChild(mobileNav.cloneNode(true));
-        } else { desktopNav.style.display='none'; desktopNav.innerHTML='' }
+        } else {
+          desktopNav.style.display='none';
+          desktopNav.innerHTML='';
+        }
       }
       sync(); addEventListener('resize',sync);
     </script>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <section class="hero">
   <div class="container hero-grid">
     <div>
       <p class="badge">Lugano · Switzerland</p>
-      <h2 class="title">Paid social that <span class="accent">performs</span>.</h2>
+
+      <!-- NEW TAGLINE -->
+      <h2 class="title">Clear strategy. <span class="accent">Clean</span> data. Strong results.</h2>
+
       <p class="lead">
         I plan, launch and optimise full-funnel Meta campaigns with clean tracking, structured A/B tests and weekly, actionable insights.
         Working knowledge of TikTok Ads; comfortable with Google Analytics and UTMs.
       </p>
+
       <div class="pill-row">
         <span class="pill">Meta Ads</span>
         <span class="pill">Full-Funnel Strategy</span>
@@ -279,7 +273,6 @@
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
 <section id="about">
   <div class="container">
     <div class="sec-head">
@@ -293,12 +286,13 @@
           <p class="kicker">Profile</p>
           <h3>Paid Social Specialist & Cultural Programmer</h3>
           <p class="muted">
-            I run performance campaigns across Meta (core) and TikTok (working knowledge), design full-funnel structures, and keep tracking clean
-            with UTMs, pixels and event hygiene. My workflow relies on tight feedback loops: test → learn → iterate → scale.
+            I run performance campaigns across Meta (core) and TikTok (working knowledge), design full-funnel structures, and
+            keep tracking clean with UTMs, pixels and event hygiene. My workflow relies on short feedback loops:
+            test → learn → iterate → scale.
           </p>
           <p class="muted">
-            Beyond digital, I’m President & Co-Artistic Director of Fresh Festival in Lugano and founder of HNGY. This mix keeps my work culturally sharp,
-            youth-focused and grounded in real communities.
+            Beyond digital, I’m President & Co-Artistic Director of Fresh Festival in Lugano and founder of HNGY.
+            This mix keeps my work culturally sharp, youth-focused and grounded in real communities.
           </p>
         </div>
       </div>
@@ -306,21 +300,23 @@
       <div class="col-5">
         <div class="card">
           <p class="kicker">At a glance</p>
+
+          <!-- NEW AT A GLANCE -->
           <ul class="muted" style="margin:0; padding-left:18px">
-            <li>Meta Ads (advanced) · TikTok Ads (WK)</li>
-            <li>A/B testing frameworks</li>
+            <li>Meta Ads (advanced) · TikTok Ads (working knowledge)</li>
+            <li>Full-funnel structure: prospecting → retargeting</li>
             <li>Tracking hygiene: UTMs · Pixels · Events</li>
-            <li>Weekly & monthly reporting</li>
-            <li>Audience strategy & creative iteration</li>
-            <li>Shopify CRM & segmentation</li>
+            <li>A/B testing frameworks & creative iteration</li>
+            <li>Weekly / monthly reporting for stakeholders</li>
+            <li>Event programming & partnerships (Fresh Festival)</li>
           </ul>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SKILLS ===== -->
 <section id="skills">
   <div class="container">
     <div class="sec-head">
@@ -362,7 +358,6 @@
   </div>
 </section>
 
-<!-- ===== PORTFOLIO ===== -->
 <section id="portfolio">
   <div class="container">
     <div class="sec-head">
@@ -372,7 +367,6 @@
 
     <div class="grid">
 
-      <!-- CASE 1 -->
       <div class="col-12 card">
         <div class="project">
           <div class="shot"></div>
@@ -382,19 +376,15 @@
             <p class="muted">
               <strong>Challenge:</strong> Rising CPA and fatigued creatives.<br>
               <strong>Actions:</strong> Cleaned UTMs/events, rebuilt funnel (broad → interests → retargeting), added creative rotation & audience tests.<br>
-              <strong>Outcome:</strong> Improved ROAS and reduced CPA over a 6-week cycle with weekly decision memos.
+              <strong>Outcome:</strong> Improved ROAS and reduced CPA over a 6-week cycle.
             </p>
             <div class="tags">
-              <span class="tag">Meta Ads</span>
-              <span class="tag">UTMs</span>
-              <span class="tag">A/B Tests</span>
-              <span class="tag">Reporting</span>
+              <span class="tag">Meta Ads</span><span class="tag">UTMs</span><span class="tag">A/B Tests</span><span class="tag">Reporting</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- CASE 2 -->
       <div class="col-12 card">
         <div class="project">
           <div class="shot"></div>
@@ -403,20 +393,16 @@
             <h3>HNGY — Shopify growth & user journey</h3>
             <p class="muted">
               <strong>Challenge:</strong> Scale while keeping CAC stable.<br>
-              <strong>Actions:</strong> Segmented new/returning users; layered retargeting; optimised PDP content and email flows.<br>
+              <strong>Actions:</strong> Segmented new/returning users; layered retargeting; optimised PDP content & email flows.<br>
               <strong>Outcome:</strong> 2,500+ sales worldwide; healthier repeat behaviour; steadier CAC.
             </p>
             <div class="tags">
-              <span class="tag">Shopify</span>
-              <span class="tag">CRM</span>
-              <span class="tag">Retargeting</span>
-              <span class="tag">Email Flows</span>
+              <span class="tag">Shopify</span><span class="tag">CRM</span><span class="tag">Retargeting</span><span class="tag">Email Flows</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- CASE 3 -->
       <div class="col-12 card">
         <div class="project">
           <div class="shot"></div>
@@ -425,14 +411,11 @@
             <h3>Driving attendance with youth audiences</h3>
             <p class="muted">
               <strong>Challenge:</strong> Multi-venue communication & audience consistency.<br>
-              <strong>Actions:</strong> Awareness → engagement → conversion funnel; creative hooks; lookalike audiences; aligned on-site comms.<br>
+              <strong>Actions:</strong> Awareness → engagement → conversion funnel; creative hooks; lookalike audiences.<br>
               <strong>Outcome:</strong> 2,000+ attendees and strong conversion from engagement to ticketing.
             </p>
             <div class="tags">
-              <span class="tag">Full-Funnel</span>
-              <span class="tag">Audience Strategy</span>
-              <span class="tag">Creative</span>
-              <span class="tag">Ticketing</span>
+              <span class="tag">Full-Funnel</span><span class="tag">Audience Strategy</span><span class="tag">Creative</span><span class="tag">Ticketing</span>
             </div>
           </div>
         </div>
@@ -442,7 +425,6 @@
   </div>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
 <section id="experience">
   <div class="container">
     <div class="sec-head">
@@ -472,7 +454,7 @@
 
             <div class="t-item">
               <h3>President & Co-Artistic Director — Fresh Festival <span class="muted">· 2023—Now</span></h3>
-              <p class="muted">Programming, partnerships, Meta promotion and operations across multiple venues (2k+ attendees).</p>
+              <p class="muted">Programming, partnerships, Meta promotion; 2k+ attendees across multiple venues.</p>
             </div>
 
           </div>
@@ -492,12 +474,10 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
 <footer id="contact">
   <div class="container">
     <div class="sec-head">
