@@ -4,28 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Emanuele Verga – Paid Social Specialist & Cultural Programmer</title>
-  <meta name="description" content="Paid Social Specialist with 5+ years of experience in Meta & TikTok Ads, full-funnel strategy, A/B testing, tracking and reporting. President & Co-Artistic Director of Fresh Festival in Lugano." />
+  <meta name="description" content="Paid Social & Performance Marketer. Full-funnel strategy across Meta and Google Ads, clean tracking, structured A/B testing, and clear reporting. Also active as a Cultural Programmer." />
   <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0f1115" />
 
+  <!-- Open Graph / Twitter (future-proof, generic) -->
+  <meta property="og:title" content="Emanuele Verga – Portfolio" />
+  <meta property="og:description" content="Paid Social & Performance Marketing. Meta + Google Ads. Clean tracking, A/B tests, clear reporting." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://emanueleverga.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Typefaces -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg: #0f1115;
-      --card: #141820;
-      --text: #e7e9ee;
-      --muted: #a3a9b7;
-      --line: #212737;
-      --accent: #7C5CFC;
-      --accent-2: #18e3b5;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --maxw: 1100px;
+      --bg:#0f1115; --card:#141820; --text:#e7e9ee; --muted:#a3a9b7;
+      --line:#212737; --accent:#7C5CFC; --accent-2:#18e3b5;
+      --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35); --maxw:1100px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
-      margin:0; font-family: Inter;
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color:var(--text);
       background:
         radial-gradient(1200px 600px at 130% -20%, rgba(124,92,252,.18), transparent 60%),
@@ -34,474 +36,401 @@
       line-height:1.6;
     }
     body::before{
-      content:""; position:fixed; inset:0;
-      background-image: linear-gradient(to right, rgba(255,255,255,.04) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(255,255,255,.04) 1px, transparent 1px);
-      background-size: 28px 28px;
-      mask-image: radial-gradient(1000px 600px at 20% 0%, #000 50%, transparent 80%);
-      pointer-events:none; z-index:-1;
+      content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size:28px 28px;
+      mask-image:radial-gradient(1000px 600px at 20% 0%, #000 50%, transparent 80%);
     }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
+    a{color:inherit; text-decoration:none}
     .container{max-width:var(--maxw); margin-inline:auto; padding-inline:24px}
-    .badge{
-      display:inline-block; padding:6px 10px; border:1px solid var(--line);
-      border-radius:999px; color:var(--muted); font-size:.8rem; letter-spacing:.04em; text-transform:uppercase;
-    }
+    .badge{display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:.8rem; letter-spacing:.04em; text-transform:uppercase}
 
-    header{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter:saturate(140%) blur(10px);
-      background:rgba(15,17,21,.6);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding-block:14px;
-    }
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(10px); background:rgba(15,17,21,.6); border-bottom:1px solid var(--line)}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:14px}
     .brand{display:flex; align-items:baseline; gap:10px}
-    .brand h1{
-      margin:0; font-family:"Space Grotesk"; font-weight:800;
-      text-transform:uppercase; font-size:1.1rem;
-    }
+    .brand h1{margin:0; font-family:"Space Grotesk"; font-weight:800; letter-spacing:.02em; text-transform:uppercase; font-size:1.1rem}
     .brand .subtitle{color:var(--muted); font-size:.85rem}
-
-    nav ul{display:flex; gap:24px; margin:0; padding:0; list-style:none}
+    nav ul{margin:0; padding:0; list-style:none; display:flex; gap:24px}
     nav a{position:relative; padding:6px 2px; font-weight:600}
-    nav a::after{
-      content:""; position:absolute; left:0; right:100%; bottom:-6px; height:2px;
-      background:linear-gradient(90deg, var(--accent), var(--accent-2));
-      transition:right .25s ease;
-    }
-    nav a:hover::after{ right:0 }
-
+    nav a::after{content:""; position:absolute; left:0; right:100%; bottom:-6px; height:2px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); transition:right .25s ease; border-radius:2px}
+    nav a:hover::after{right:0}
     .menu-toggle{display:none}
     @media(max-width:780px){
-      nav ul{
-        position:fixed; inset:auto 0 0 0;
-        background:rgba(15,17,21,.95);
-        border-top:1px solid var(--line);
-        transform:translateY(105%);
-        transition:transform .35s ease;
-        padding:20px 24px; gap:14px; flex-direction:column;
-      }
+      nav ul{position:fixed; inset:auto 0 0 0; background:rgba(15,17,21,.95); border-top:1px solid var(--line); transform:translateY(105%); transition:transform .35s ease; padding:20px 24px; gap:14px; flex-direction:column}
       .menu-toggle{display:block}
       .menu-toggle input{display:none}
-      .menu-toggle label{display:grid; gap:5px; padding:8px; cursor:pointer}
-      .menu-toggle label span{
-        width:26px; height:2px; background:var(--text); border-radius:2px;
-      }
+      .menu-toggle label{display:grid; gap:5px; cursor:pointer; padding:8px}
+      .menu-toggle label span{width:26px; height:2px; background:var(--text); border-radius:2px}
       .menu-toggle input:checked ~ ul{transform:translateY(0)}
     }
 
     .hero{padding:72px 0 40px; border-bottom:1px solid var(--line)}
-    .hero-grid{
-      display:grid; gap:28px; align-items:center;
-      grid-template-columns:1.2fr .8fr;
-    }
-    @media(max-width:900px){ .hero-grid{grid-template-columns:1fr} }
-    .title{
-      font-family:"Space Grotesk";
-      font-size:clamp(2.2rem,5vw,3.4rem);
-      margin:0 0 12px;
-    }
-    .title .accent{
-      background:linear-gradient(90deg, var(--accent), var(--accent-2));
-      -webkit-background-clip:text; color:transparent;
-    }
-    .lead{color:var(--muted); margin:0 0 18px}
-
-    .hero-card{
-      background:
-        linear-gradient(180deg, rgba(124,92,252,.10), rgba(124,92,252,0) 40%),
-        linear-gradient(0deg, rgba(24,227,181,.07), rgba(24,227,181,0) 60%),
-        var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:22px;
-      box-shadow:var(--shadow);
-    }
+    .hero-grid{display:grid; gap:28px; align-items:center; grid-template-columns:1.2fr .8fr}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+    .title{font-family:"Space Grotesk"; font-size:clamp(2.2rem,5vw,3.4rem); line-height:1.06; margin:0 0 12px}
+    .title .accent{background:linear-gradient(90deg,var(--accent),var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+    .lead{color:var(--muted); font-size:1.05rem; margin:0 0 18px}
+    .hero-card{background:linear-gradient(180deg, rgba(124,92,252,.10), rgba(124,92,252,0) 40%), linear-gradient(0deg, rgba(24,227,181,.07), rgba(24,227,181,0) 60%), var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
     .pill-row{display:flex; flex-wrap:wrap; gap:10px}
-    .pill{font-size:.85rem; border:1px solid var(--line); padding:8px 12px; border-radius:999px; background:#0f11154d}
+    .pill{font-size:.85rem; color:var(--text); border:1px solid var(--line); border-radius:999px; padding:8px 12px; background:#0f11154d}
 
     section{padding:64px 0; border-bottom:1px solid var(--line)}
-    .sec-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:26px}
-    .sec-title{
-      font-family:"Space Grotesk";
-      text-transform:uppercase; letter-spacing:.08em; margin:0;
-    }
-    .underline{height:2px; width:64px; background:linear-gradient(90deg,var(--accent),var(--accent-2))}
-
+    .sec-head{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:26px}
+    .sec-title{margin:0; font-family:"Space Grotesk"; font-size:1.4rem; letter-spacing:.08em; text-transform:uppercase}
+    .underline{height:2px; width:64px; border-radius:2px; background:linear-gradient(90deg,var(--accent),var(--accent-2))}
     .grid{display:grid; gap:22px; grid-template-columns:repeat(12,1fr)}
-    .col-7{grid-column:span 7}
-    .col-5{grid-column:span 5}
-    .col-6{grid-column:span 6}
-    .col-4{grid-column:span 4}
-    .col-12{grid-column:1/-1}
-    @media(max-width:900px){
-      .col-7,.col-5,.col-6,.col-4{grid-column:1/-1}
-    }
+    .col-7{grid-column:span 7} .col-5{grid-column:span 5} .col-6{grid-column:span 6} .col-4{grid-column:span 4} .col-12{grid-column:1/-1}
+    @media(max-width:900px){.col-7,.col-5,.col-6,.col-4{grid-column:1/-1}}
 
-    .card{
-      background:var(--card); border:1px solid var(--line);
-      border-radius:var(--radius); padding:20px;
-      transition:.25s ease;
-    }
-    .card:hover{
-      transform:translateY(-2px);
-      border-color:color-mix(in oklab,var(--accent)35%,var(--line));
-    }
-    .kicker{color:var(--muted); text-transform:uppercase; font-size:.8rem; margin:0 0 4px}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:20px; transition:transform .25s ease, border-color .25s ease}
+    .card:hover{transform:translateY(-2px); border-color:color-mix(in oklab, var(--accent) 35%, var(--line)); box-shadow:0 10px 38px rgba(124,92,252,.12)}
+    .kicker{color:var(--muted); text-transform:uppercase; letter-spacing:.08em; font-size:.8rem; margin:0 0 4px}
     .muted{color:var(--muted)}
     .tags{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
-    .tag{border:1px dashed var(--line); padding:6px 10px; border-radius:9px; font-size:.85rem; color:var(--muted)}
+    .tag{border:1px dashed var(--line); border-radius:9px; padding:6px 10px; font-size:.85rem; color:var(--muted)}
 
     .project{display:grid; gap:14px; grid-template-columns:1.2fr 1fr; align-items:center}
     @media(max-width:780px){.project{grid-template-columns:1fr}}
-    .shot{
-      border-radius:14px; overflow:hidden; border:1px solid var(--line);
-      background:
-        radial-gradient(400px 200px at 80% 20%, rgba(124,92,252,.28), transparent 60%),
-        radial-gradient(400px 260px at 10% 90%, rgba(24,227,181,.25), transparent 60%),
-        linear-gradient(135deg, #1c2432, #171c27);
-      aspect-ratio:16/9;
-    }
+    .shot{border-radius:14px; overflow:hidden; border:1px solid var(--line); background:
+      radial-gradient(400px 200px at 80% 20%, rgba(124,92,252,.28), transparent 60%),
+      radial-gradient(400px 260px at 10% 90%, rgba(24,227,181,.25), transparent 60%),
+      linear-gradient(135deg,#1c2432,#171c27); aspect-ratio:16/9}
 
     .timeline{position:relative; margin-left:6px}
-    .timeline::before{
-      content:""; position:absolute; left:10px; top:0; bottom:0; width:2px;
-      background:linear-gradient(180deg,var(--line),transparent);
-    }
+    .timeline::before{content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:linear-gradient(180deg,var(--line),transparent)}
     .t-item{position:relative; padding-left:40px; margin-bottom:18px}
-    .t-item::before{
-      content:""; position:absolute; left:4px; top:4px;
-      width:12px; height:12px; border-radius:50%;
-      background:var(--accent); box-shadow:0 0 0 6px rgba(124,92,252,.18);
-    }
+    .t-item::before{content:""; position:absolute; left:4px; top:4px; width:12px; height:12px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 6px rgba(124,92,252,.18)}
 
     footer{padding:60px 0}
     .links{display:flex; flex-wrap:wrap; gap:16px}
-    .links a{
-      border:1px solid var(--line); padding:10px 12px; border-radius:12px;
-      transition:.25s ease;
-    }
-    .links a:hover{
-      border-color:color-mix(in oklab,var(--accent)35%,var(--line));
-      transform:translateY(-1px);
-    }
+    .links a{border:1px solid var(--line); border-radius:12px; padding:10px 12px; transition:border-color .25s ease, transform .25s ease}
+    .links a:hover{border-color:color-mix(in oklab, var(--accent) 35%, var(--line)); transform:translateY(-1px)}
   </style>
+
+  <!-- Schema.org Person (evergreen) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Emanuele Verga",
+    "jobTitle":"Paid Social Specialist & Cultural Programmer",
+    "email":"mailto:emanuele.verga.work@gmail.com",
+    "url":"https://emanueleverga.github.io/portfolio/",
+    "address":{"@type":"PostalAddress","addressLocality":"Lugano","addressCountry":"CH"},
+    "sameAs":["https://www.linkedin.com/in/emanuele-verga"]
+  }
+  </script>
 </head>
 
 <body>
 
-<header>
-  <div class="container nav">
-    <div class="brand">
-      <h1>Emanuele Verga</h1>
-      <span class="subtitle">Paid Social Specialist · Cultural Programmer</span>
-    </div>
-
-    <div class="menu-toggle">
-      <input id="navcheck" type="checkbox" />
-      <label for="navcheck"><span></span><span></span><span></span></label>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <nav class="desktop" style="display:none"></nav>
-
-    <script>
-      const mobileNav=document.querySelector('.menu-toggle nav ul');
-      const desktopNav=document.querySelector('nav.desktop');
-      function sync(){
-        if(window.innerWidth>780){
-          desktopNav.style.display='block';
-          if(!desktopNav.innerHTML) desktopNav.appendChild(mobileNav.cloneNode(true));
-        } else {
-          desktopNav.style.display='none';
-          desktopNav.innerHTML='';
-        }
-      }
-      sync(); addEventListener('resize',sync);
-    </script>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="badge">Lugano · Switzerland</p>
-
-      <!-- NEW TAGLINE -->
-      <h2 class="title">Clear strategy. <span class="accent">Clean</span> data. Strong results.</h2>
-
-      <p class="lead">
-        I plan, launch and optimise full-funnel Meta campaigns with clean tracking, structured A/B tests and weekly, actionable insights.
-        Working knowledge of TikTok Ads; comfortable with Google Analytics and UTMs.
-      </p>
-
-      <div class="pill-row">
-        <span class="pill">Meta Ads</span>
-        <span class="pill">Full-Funnel Strategy</span>
-        <span class="pill">A/B Testing</span>
-        <span class="pill">UTMs & Pixels</span>
-        <span class="pill">Reporting</span>
-      </div>
-    </div>
-
-    <div class="hero-card">
-      <p class="kicker">Currently</p>
-      <h3 style="margin:6px 0 8px">Freelance Paid Social Specialist</h3>
-      <p class="muted" style="margin:0 0 14px">
-        Running meta-first performance campaigns for Swiss SMEs. Scaling my Shopify brand (HNGY) with data-driven creative tests.
-      </p>
-      <div class="tags">
-        <span class="tag">Meta Ads</span>
-        <span class="tag">TikTok (WK)</span>
-        <span class="tag">A/B Tests</span>
-        <span class="tag">UTMs & Pixels</span>
-        <span class="tag">Weekly Reporting</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <div class="sec-head">
-      <h2 class="sec-title">About Me</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="grid">
-      <div class="col-7">
-        <div class="card">
-          <p class="kicker">Profile</p>
-          <h3>Paid Social Specialist & Cultural Programmer</h3>
-          <p class="muted">
-            I run performance campaigns across Meta (core) and TikTok (working knowledge), design full-funnel structures, and
-            keep tracking clean with UTMs, pixels and event hygiene. My workflow relies on short feedback loops:
-            test → learn → iterate → scale.
-          </p>
-          <p class="muted">
-            Beyond digital, I’m President & Co-Artistic Director of Fresh Festival in Lugano and founder of HNGY.
-            This mix keeps my work culturally sharp, youth-focused and grounded in real communities.
-          </p>
-        </div>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <h1>Emanuele Verga</h1>
+        <span class="subtitle">Paid Social Specialist · Cultural Programmer</span>
       </div>
 
-      <div class="col-5">
-        <div class="card">
-          <p class="kicker">At a glance</p>
-
-          <!-- NEW AT A GLANCE -->
-          <ul class="muted" style="margin:0; padding-left:18px">
-            <li>Meta Ads (advanced) · TikTok Ads (working knowledge)</li>
-            <li>Full-funnel structure: prospecting → retargeting</li>
-            <li>Tracking hygiene: UTMs · Pixels · Events</li>
-            <li>A/B testing frameworks & creative iteration</li>
-            <li>Weekly / monthly reporting for stakeholders</li>
-            <li>Event programming & partnerships (Fresh Festival)</li>
+      <div class="menu-toggle">
+        <input id="navcheck" type="checkbox" />
+        <label for="navcheck" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-
-        </div>
+        </nav>
       </div>
+
+      <!-- Desktop nav clone -->
+      <nav class="desktop" aria-label="Primary" style="display:none"></nav>
+      <script>
+        const mobileNav=document.querySelector('.menu-toggle nav ul');
+        const desktopNav=document.querySelector('nav.desktop');
+        function syncNav(){
+          if(window.innerWidth>780){
+            desktopNav.style.display='block';
+            if(!desktopNav.innerHTML) desktopNav.appendChild(mobileNav.cloneNode(true));
+          }else{
+            desktopNav.style.display='none';
+            desktopNav.innerHTML='';
+          }
+        }
+        syncNav(); addEventListener('resize',syncNav);
+      </script>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="skills">
-  <div class="container">
-    <div class="sec-head">
-      <h2 class="sec-title">Skills & Expertise</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="grid">
-      <div class="col-6">
-        <div class="card">
-          <p class="kicker">Paid Social & Performance</p>
-          <h3>Planning, Optimisation, Scaling</h3>
-          <div class="tags">
-            <span class="tag">Meta Ads (Advanced)</span>
-            <span class="tag">TikTok Ads (WK)</span>
-            <span class="tag">Full-Funnel Strategy</span>
-            <span class="tag">Budget Optimisation</span>
-            <span class="tag">CPC/CPA/ROAS</span>
-            <span class="tag">Creative Testing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-6">
-        <div class="card">
-          <p class="kicker">Analytics & Ops</p>
-          <h3>Tracking, Testing, Reporting</h3>
-          <div class="tags">
-            <span class="tag">Google Analytics</span>
-            <span class="tag">UTMs · Pixels · Events</span>
-            <span class="tag">Data Hygiene</span>
-            <span class="tag">A/B Experimentation</span>
-            <span class="tag">Naming Conventions</span>
-            <span class="tag">Stakeholder Comms</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="portfolio">
-  <div class="container">
-    <div class="sec-head">
-      <h2 class="sec-title">Portfolio Highlights</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="grid">
-
-      <div class="col-12 card">
-        <div class="project">
-          <div class="shot"></div>
-          <div>
-            <p class="kicker">Paid Social · E-commerce</p>
-            <h3>Rebuilding a full-funnel with cleaner tracking</h3>
-            <p class="muted">
-              <strong>Challenge:</strong> Rising CPA and fatigued creatives.<br>
-              <strong>Actions:</strong> Cleaned UTMs/events, rebuilt funnel (broad → interests → retargeting), added creative rotation & audience tests.<br>
-              <strong>Outcome:</strong> Improved ROAS and reduced CPA over a 6-week cycle.
-            </p>
-            <div class="tags">
-              <span class="tag">Meta Ads</span><span class="tag">UTMs</span><span class="tag">A/B Tests</span><span class="tag">Reporting</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 card">
-        <div class="project">
-          <div class="shot"></div>
-          <div>
-            <p class="kicker">Brand & Community</p>
-            <h3>HNGY — Shopify growth & user journey</h3>
-            <p class="muted">
-              <strong>Challenge:</strong> Scale while keeping CAC stable.<br>
-              <strong>Actions:</strong> Segmented new/returning users; layered retargeting; optimised PDP content & email flows.<br>
-              <strong>Outcome:</strong> 2,500+ sales worldwide; healthier repeat behaviour; steadier CAC.
-            </p>
-            <div class="tags">
-              <span class="tag">Shopify</span><span class="tag">CRM</span><span class="tag">Retargeting</span><span class="tag">Email Flows</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 card">
-        <div class="project">
-          <div class="shot"></div>
-          <div>
-            <p class="kicker">Culture & Events</p>
-            <h3>Driving attendance with youth audiences</h3>
-            <p class="muted">
-              <strong>Challenge:</strong> Multi-venue communication & audience consistency.<br>
-              <strong>Actions:</strong> Awareness → engagement → conversion funnel; creative hooks; lookalike audiences.<br>
-              <strong>Outcome:</strong> 2,000+ attendees and strong conversion from engagement to ticketing.
-            </p>
-            <div class="tags">
-              <span class="tag">Full-Funnel</span><span class="tag">Audience Strategy</span><span class="tag">Creative</span><span class="tag">Ticketing</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="container">
-    <div class="sec-head">
-      <h2 class="sec-title">Experience & Education</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="grid">
-      <div class="col-7">
-        <div class="card">
-          <div class="timeline">
-
-            <div class="t-item">
-              <h3>Freelance Paid Social Specialist <span class="muted">· 2020—Present</span></h3>
-              <p class="muted">Meta-first strategy, tracking hygiene, creative testing and weekly reporting for Swiss SMEs.</p>
-            </div>
-
-            <div class="t-item">
-              <h3>Paid Ads Specialist — Koal Studio <span class="muted">· 2022—2025</span></h3>
-              <p class="muted">Full-funnel planning, daily optimisation, audience/creative tests; budgets up to CHF 10k/mo.</p>
-            </div>
-
-            <div class="t-item">
-              <h3>Advertisement Specialist — GASTO GmbH <span class="muted">· 2021—2023</span></h3>
-              <p class="muted">Supported small clients on Meta/Google Ads with basic setups and optimisation.</p>
-            </div>
-
-            <div class="t-item">
-              <h3>President & Co-Artistic Director — Fresh Festival <span class="muted">· 2023—Now</span></h3>
-              <p class="muted">Programming, partnerships, Meta promotion; 2k+ attendees across multiple venues.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-5">
-        <div class="card">
-          <p class="kicker">Education</p>
-          <h3>Bachelor of Arts in Music Business</h3>
-          <p class="muted">BIMM Institute Berlin — University of West London</p>
-          <p class="muted">Semester Abroad: London</p>
-          <div class="tags" style="margin-top:12px">
-            <span class="tag">Music & Culture</span>
-            <span class="tag">Project Coordination</span>
-            <span class="tag">Comms</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <div class="container">
-    <div class="sec-head">
-      <h2 class="sec-title">Contact</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="card" style="display:grid; gap:18px">
-      <p class="muted" style="margin:0">
-        Open to full-time roles and selected freelance projects in paid social/performance. Happy to share more case details on request.
-      </p>
-
-      <div class="links">
-        <a href="mailto:emanuele.verga.work@gmail.com">📧 emanuele.verga.work@gmail.com</a>
-        <a href="https://www.linkedin.com/in/emanuele-verga" target="_blank">🔗 linkedin.com/in/emanuele-verga</a>
-        <a>📍 Lugano, Switzerland</a>
-      </div>
-
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
       <div>
-        <a class="btn" href="#about">Back to top ↑</a>
+        <p class="badge">Lugano · Switzerland</p>
+        <h2 class="title">Clear strategy. <span class="accent">Clean</span> data. Strong results.</h2>
+        <p class="lead">
+          Full-funnel campaigns across Meta and Google Ads, with reliable tracking, structured A/B testing and concise reporting.
+          Comfortable with TikTok Ads and Google Analytics. Outcome-focused and collaboration-friendly.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Meta Ads</span>
+          <span class="pill">Google Ads</span>
+          <span class="pill">Full-Funnel Strategy</span>
+          <span class="pill">A/B Testing</span>
+          <span class="pill">UTMs & Pixels</span>
+          <span class="pill">Reporting</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <p class="kicker">Currently</p>
+        <h3 style="margin:6px 0 8px">Freelance Performance Marketer</h3>
+        <p class="muted" style="margin:0 0 14px">
+          Running acquisition and retention campaigns for brands and SMEs. Also building a streetwear e-commerce (HNGY) on Shopify.
+        </p>
+        <div class="tags">
+          <span class="tag">Meta & Google Ads</span>
+          <span class="tag">A/B Tests</span>
+          <span class="tag">UTMs & Events</span>
+          <span class="tag">Dashboards</span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">About Me</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="grid">
+        <div class="col-7">
+          <div class="card">
+            <p class="kicker">Profile</p>
+            <h3>Paid Social & Performance Marketing</h3>
+            <p class="muted">
+              I plan, launch and optimise paid campaigns across Meta and Google Ads. My approach: clear objectives, clean tracking,
+              focused experiments, and short feedback loops that turn results into next steps the team can use.
+            </p>
+            <p class="muted">
+              I’m also active in the cultural field as President & Co-Artistic Director of Fresh Festival and as a founder of HNGY.
+              That mix keeps my work human, design-aware and connected to real audiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="card">
+            <p class="kicker">At a glance</p>
+            <ul class="muted" style="margin:0; padding-left:18px">
+              <li>Meta Ads (advanced) · Google Ads (solid) · TikTok Ads (working knowledge)</li>
+              <li>Full-funnel structure: prospecting → retargeting → retention</li>
+              <li>Tracking hygiene: UTMs · Pixels · Events</li>
+              <li>Structured A/B tests & creative iteration</li>
+              <li>Weekly / monthly reporting for stakeholders</li>
+              <li>Event programming & partnerships (Fresh Festival)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Skills & Expertise</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="grid">
+        <div class="col-6">
+          <div class="card">
+            <p class="kicker">Paid Media & Performance</p>
+            <h3>Planning, Optimisation, Scaling</h3>
+            <div class="tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Google Ads</span>
+              <span class="tag">TikTok Ads</span>
+              <span class="tag">Full-Funnel Strategy</span>
+              <span class="tag">Budget Optimisation</span>
+              <span class="tag">CPC / CPA / ROAS</span>
+              <span class="tag">Creative Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card">
+            <p class="kicker">Analytics & Ops</p>
+            <h3>Tracking, Testing, Reporting</h3>
+            <div class="tags">
+              <span class="tag">Google Analytics</span>
+              <span class="tag">UTMs · Pixels · Events</span>
+              <span class="tag">Data Hygiene</span>
+              <span class="tag">A/B Experimentation</span>
+              <span class="tag">Naming Conventions</span>
+              <span class="tag">Stakeholder Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work / Caselets -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Selected Work</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="grid">
+
+        <!-- Case 1 -->
+        <div class="col-12 card">
+          <div class="project">
+            <div class="shot" aria-hidden="true"></div>
+            <div>
+              <p class="kicker">E-commerce · Acquisition & Retargeting</p>
+              <h3>Rebuilding a full-funnel with cleaner tracking</h3>
+              <p class="muted">
+                <strong>Challenge:</strong> Rising CPA across Meta & Google; creative fatigue.<br>
+                <strong>Actions:</strong> Cleaned UTMs/events, rebuilt structure (broad → interest/lookalike → retargeting), introduced creative rotation & audience tests.<br>
+                <strong>Outcome:</strong> More stable ROAS and lower CPA over a focused 6-week cycle, with concise weekly memos.
+              </p>
+              <div class="tags">
+                <span class="tag">Meta Ads</span><span class="tag">Google Ads</span><span class="tag">UTMs</span><span class="tag">A/B Tests</span><span class="tag">Reporting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="col-12 card">
+          <div class="project">
+            <div class="shot" aria-hidden="true"></div>
+            <div>
+              <p class="kicker">Brand & Community</p>
+              <h3>HNGY — Shopify growth & customer journey</h3>
+              <p class="muted">
+                <strong>Challenge:</strong> Scale while keeping acquisition costs predictable.<br>
+                <strong>Actions:</strong> Segmented new vs returning users, layered retargeting, iterated PDP content and email flows.<br>
+                <strong>Outcome:</strong> 2,500+ sales worldwide with steadier CAC and healthier repeat behaviour.
+              </p>
+              <div class="tags">
+                <span class="tag">Shopify</span><span class="tag">CRM</span><span class="tag">Retargeting</span><span class="tag">Email Flows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="col-12 card">
+          <div class="project">
+            <div class="shot" aria-hidden="true"></div>
+            <div>
+              <p class="kicker">Culture & Events</p>
+              <h3>Driving attendance with youth audiences</h3>
+              <p class="muted">
+                <strong>Challenge:</strong> Multi-venue programming with limited attention windows.<br>
+                <strong>Actions:</strong> Awareness → engagement → conversion funnel; creative hooks; lookalike audiences; aligned on-site comms.<br>
+                <strong>Outcome:</strong> Solid turnout (2k+) and consistent conversion from engaged audiences to ticketing.
+              </p>
+              <div class="tags">
+                <span class="tag">Full-Funnel</span><span class="tag">Audience Strategy</span><span class="tag">Creative</span><span class="tag">Ticketing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Experience & Education</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="grid">
+        <div class="col-7">
+          <div class="card">
+            <div class="timeline">
+              <div class="t-item">
+                <h3>Freelance Performance Marketer <span class="muted">· ongoing</span></h3>
+                <p class="muted">Meta-first strategy with Google Ads support, tracking hygiene, creative testing and reporting for brands/SMEs.</p>
+              </div>
+              <div class="t-item">
+                <h3>Paid Ads Specialist — Koal Studio <span class="muted">· past role</span></h3>
+                <p class="muted">Full-funnel planning across Meta & Google, daily optimisation, audience/creative tests; collaborative reporting.</p>
+              </div>
+              <div class="t-item">
+                <h3>President & Co-Artistic Director — Fresh Festival <span class="muted">· ongoing</span></h3>
+                <p class="muted">Programming, partnerships, communication and on-site operations across multiple venues.</p>
+              </div>
+              <div class="t-item">
+                <h3>Founder — HNGY <span class="muted">· ongoing</span></h3>
+                <p class="muted">Streetwear e-commerce on Shopify; brand, acquisition, CRM and customer experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="card">
+            <p class="kicker">Education</p>
+            <h3>Bachelor of Arts in Music Business</h3>
+            <p class="muted">BIMM Institute Berlin — University of West London</p>
+            <p class="muted">Semester in London</p>
+            <div class="tags" style="margin-top:12px">
+              <span class="tag">Culture & Music</span><span class="tag">Project Coordination</span><span class="tag">Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Contact</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="card" style="display:grid; gap:18px">
+        <p class="muted" style="margin:0">
+          Open to full-time roles, collaborations and selected freelance projects in paid social/performance. Detailed case notes available on request.
+        </p>
+        <div class="links">
+          <a href="mailto:emanuele.verga.work@gmail.com" aria-label="Email">📧 emanuele.verga.work@gmail.com</a>
+          <a href="https://www.linkedin.com/in/emanuele-verga" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 linkedin.com/in/emanuele-verga</a>
+          <a aria-label="Location">📍 Lugano, Switzerland</a>
+          <!-- Optional: link al CV PDF in futuro -->
+          <!-- <a href="Verga_Emanuele_CV.pdf" target="_blank" rel="noopener">📄 CV (PDF)</a> -->
+        </div>
+        <div>
+          <a class="btn" href="#about" aria-label="Back to top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
